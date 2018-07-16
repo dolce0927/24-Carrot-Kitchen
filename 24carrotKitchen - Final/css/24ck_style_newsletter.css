@@ -1,0 +1,120 @@
+/*
+   Module 3 - Team Project
+
+   Author: Rosanna Morey & Daniel Chrisostomo
+   Due Date: June 16, 2018
+   File Name: 24ck_styles_newsletter.css
+
+   Notes: stylesheet for the newsletter page4;
+
+*/
+
+/* Form Layout Styles */
+div.flexContainer {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+form#newsletter {
+	width: 65%;
+	line-height: 1.3em;
+}
+
+fieldset#custInfo {
+	border-radius: 20px;
+	box-shadow: rgb(204, 0, 0) 0px 0px 1px,
+				rgb(204, 0, 0) 0px 0px 5px, 
+				rgb(51, 51, 51) 0px 0px 10px,
+				rgb(51, 51, 51) 0px 0px 20px; 
+}
+
+p#reqFields {
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 1em;
+}
+
+div.formRow {
+	margin: auto;
+	padding: .2em;
+	padding-left: 10px;
+}
+
+input#fName {
+	margin-left: 14px;
+}
+
+input#lName{
+	margin-left: 15px; 
+}
+
+input#state {
+	margin-left: 46px;
+}
+
+input#mail {
+	margin-left: 39px;
+}
+
+input#phone {
+	display: block;
+}
+
+input#where {
+	 width: 30px;
+ }
+
+label#word {
+	padding-left: 5px;
+ }
+
+textarea#suggTips {
+	height: 100px;
+	width: 95%;
+}
+
+/* Form Button Styles */
+
+div#buttons {
+	text-align: center;
+	width: 100%;
+}
+
+div#buttons input:hover {
+	color: rgb(0, 0, 0);
+	background: linear-gradient(30deg, rgb(255, 26, 26) 10%, rgb(122, 162, 42) 60%);
+}
+
+input[type='submit'], input[type='reset'] {
+
+	font-size: 1.2em;
+	padding: 5px;
+	margin: 15px;
+	border-radius: 15px;
+	box-shadow: rgb(204, 0, 0) 0px 0px 5px,
+				rgb(204, 0, 0) 0px 0px 5px, 
+				rgb(122, 162, 42) 0px 0px 10px,
+				rgb(122, 162, 42) 0px 0px 20px;				
+}
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(220, 255, 220);
+}
+
+input#fName:focus:valid,
+input#lName:focus:valid,
+input#mail:focus:valid,
+input#state:focus:valid {
+	background: rgb(220, 255, 220) url(../img/24ck_valid.png) bottom right/contain no-repeat;
+}
+
+input#fName:focus:invalid,
+input#lName:focus:invalid,
+input#mail:focus:invalid,
+input#state:focus:invalid {
+	background: rgb(255, 232, 233) url(../img/24ck_invalid.png) bottom right/contain no-repeat;
+}
+

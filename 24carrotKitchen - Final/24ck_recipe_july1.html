@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+   <!--Module 3 - Team Project
+
+   Author: Rosanna Morey & Daniel Chrisostomo
+   Due Date: June 16, 2018
+   File Name: 24ck_recipe_july1.html  
+
+   Notes: this the file for the pages that link from the calendar.  Ideally this would be done from a database, but for the purposes of this exercise, the recipe info was made static and the date dynamic to give the illusion of the info changing daily.-->
+
+    <meta charset="utf-8"/>
+	<title>Daily Recipe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />	
+	<link href="css/24ck_styles1.css" rel="stylesheet" />	
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+	<link href="24ck_styles_media_query.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div id="sectionRecipe1" class="container-fluid">
+<div class="pages" id="recipePages1">
+
+	<h1 class="recipes1"></h1>	
+
+	<div class="flex-container" id="firstFlex">
+
+		<!-- <div id=printFriendly></div> to be added if there is time-->
+
+		<a href="24ck_home.html#section3" class="previous">&laquo; Back to Calendar</a>
+
+		<div id="nameRecipe">Recipe of the Day for :&nbsp; <span id="date">
+		</span> 
+
+		<script>	
+			var thisDay = new Date()
+			document.getElementById("date").innerHTML = thisDay.toLocaleDateString();
+		</script> 	
+
+		</div>	
+		<h3 id="recName">Recipe Name</h3>	
+	</div>	
+
+	<div class="flex-container" id="secondFlex">
+
+	  	<div id="ingredRecipe">Ingredients
+		  	<p class="dailyIngred" id="ingred">		  	
+				<ul id="linkableIngred">
+					<li>1/2 C optueyv</li>
+					<li>1 C jfjdk</li>
+					<li>1 C djfdfjdkj</li>
+					<li>1/3 C sliced hjur</li>
+					<li>1/2 tsp Cinnamon</li>
+					<li>1/8 tsp Nutmeg</li>
+					<li>pinch of Salt</li>
+				</ul>
+	
+		  	</p>		  	
+		</div>
+
+	  	<div class="dailyPrep" id="prepRecipe">Recipe Instructions
+	  		<p id="prep">
+	  		Abelmoschus moschatus asafoetida bixa orellana cicely geum urbanum korarima lavandula spp. lime flower myristica fragrans rosemary rue ruta graveolens saigon cinnamon syzygium aromaticum tarragon vanilla planifolia wood avens wood garlic. Apium graveolens armoracia rusticana bixa orellana brassica hirta ceratonia siliqua cinnamomum loureiroi djansang epilobium parviflorum eritrea ginger hyssop limnophila aromatica lippia citriodora mint oregano perilla spp. ricinodendron heudelotii satureja montana. 
+	  		<br />
+			Citratum allium tuberosum brassica nigra canella winterana crocus sativus glycyrrhiza glabra liquorice mustard plant pandanus odoratissimus piper cubeba tanacetum balsamita torch turmeric za'atar. Anethum graveolens apple mint black cumin blue melilot cornish pepper leaf elephant fenugreek lemongrass leptotes bicolor mace mustard pandan flower pink pepper piper borbonense ramsons soleracea syzygium anisatum thyme vietnam wild thyme zedoary. 
+	  		</p>
+	  	</div> 
+	</div>
+
+</div>
+
+</body>
+</html>
